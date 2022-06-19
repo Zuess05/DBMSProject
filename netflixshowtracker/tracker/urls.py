@@ -10,4 +10,6 @@ urlpatterns = [
     path('database/displayshow/',views.displayshow,name='displayshow'),
     path('wishlist/',views.wishlist,name='wishlist'),
     path('addtowishlist/',views.addtowishlist,name='addtowishlist'),
+    path('add1/',views.add1,name='add1'),
+    path('displayshow/',views.displayshow,name='displayshow'),
 ]

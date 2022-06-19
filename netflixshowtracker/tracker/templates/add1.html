@@ -1,19 +1,47 @@
 <!DOCTYPE html>
 <html>
-    <body>
+    <style>
+        h1{
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            color: orange;}
+            .form{
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+                background-color: black;
+                padding: 10px;
+                font-size: 18px;
+                font-family: 'Times New Roman', Times, serif;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                border-radius: 10px;
+                
+            }
+            h2{
+                    
+                font-family: 'Times New Roman', Times, serif;
+                color: orange;
+            }
+        </style>
+    <body style = "background-color: black;">
         <h1>Add Show Details</h1>
-        <form action="addshow/" method="post">
+        <form  class = "form" addshow/" method="post">
             {% csrf_token %}
-            ID: <br>
+            <h2>ID</h2>
+            : 
             <input type="number" name="show_id">
-            <br>
-            Name of the Show: <br>
+            
+            <h2>Name of the Show: </h2><br>
             <input type="text" name="name">
-            <br>
-            Season : <br>
+            
+            <h2>Season : </h2>
+            
             <input type="number" name="season">
             <br>
-            Episodes : <br>
+            <h2>Episodes : </h2>
+            
             <input type="number" name="episodes">
             <br>
             <input type="submit" value="Submit">
